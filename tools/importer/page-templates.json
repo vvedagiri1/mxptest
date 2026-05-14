@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://wknd.site/us/en.html"
+      ],
+      "description": "WKND homepage with hero carousel, featured articles, and promotional content",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            "div.carousel.cmp-carousel--hero"
+          ]
+        },
+        {
+          "name": "columns-featured",
+          "instances": [
+            "div.teaser.cmp-teaser--featured"
+          ]
+        },
+        {
+          "name": "cards-article",
+          "instances": [
+            "div.image-list.list"
+          ]
+        },
+        {
+          "name": "hero-adventure",
+          "instances": [
+            "div.teaser.cmp-teaser--hero.cmp-teaser--imagebottom"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Carousel",
+          "selector": "div.carousel.cmp-carousel--hero",
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Featured Articles",
+          "selector": "main.container.cmp-layout-container--fixed:first-of-type",
+          "style": null,
+          "blocks": [
+            "columns-featured",
+            "cards-article"
+          ],
+          "defaultContent": [
+            "div.title.cmp-title--underline:nth-of-type(1)",
+            "div.button.cmp-button--primary:nth-of-type(1)",
+            "div.separator:nth-of-type(1)",
+            "div.title.cmp-title--underline:nth-of-type(2)"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Hero Adventure",
+          "selector": "div.teaser.cmp-teaser--hero.cmp-teaser--imagebottom",
+          "style": null,
+          "blocks": [
+            "hero-adventure"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Adventure Destinations",
+          "selector": "main.container.cmp-layout-container--fixed:nth-of-type(2)",
+          "style": null,
+          "blocks": [
+            "cards-article"
+          ],
+          "defaultContent": [
+            "div.title:not(.cmp-title--underline)",
+            "div.button.cmp-button--primary:nth-of-type(2)",
+            "div.separator:nth-of-type(2)"
+          ]
+        }
+      ]
+    }
+  ]
+}
